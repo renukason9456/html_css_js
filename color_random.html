@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function randombg()
+    {
+        var x = Math.floor(Math.random()*256);
+        var y = Math.floor(Math.random()*256);
+        var z = Math.floor(Math.random()*256);
+        var bgcolor = "rgb("+x+","+y+","+z+")";
+        document.body.style.backgroundColor = bgcolor;
+        var x = Math.floor(Math.random()*256);
+        var y = Math.floor(Math.random()*256);
+        var z = Math.floor(Math.random()*256);
+        var bgcolor = "rgb("+x+","+y+","+z+")";
+        document.body.style.color = bgcolor;
+        window.setTimeout("randombg()",1000);
+
+    }
+        </script>
+</head>
+<body onload="randombg()">
+   <h1> welcome</h1>
+//userId,password,retypepassword,email, validate mathcing password and retype pasword and validate mobile number register form
+</body>
+</html>

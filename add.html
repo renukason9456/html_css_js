@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            input{
+                background-color: aquamarine;
+                color:black;
+            }
+            </style>
+        </head>
+    <body>
+        <calculation you want to do choose>
+        <from>
+            <input type="button" value="sum" onclick="add()">
+            <input type="button" value="substraction" onclick="sub()">
+            <input type="button" value="multiplication" onclick="mul()">
+            <input type="button" value="division" onclick="div()">
+            </from>
+            <script>
+                function add()
+                {
+                    var a=10;
+                    var b=20;
+                    var sum= a+b;
+                    document.write("addition="+sum)
+                    document.write("hi addition you get is"+"<br>"+"correct!")
+                }
+                function sub()
+                {
+                    var a=10;
+                    var b=20;
+                    var sum= a-b;
+                    document.write("substraction="+sum)
+                }
+                function mul()
+                {
+                    var a=10;
+                    var b=20;
+                    var sum= a*b;
+                    document.write("multiplication="+sum)
+                }
+                function div()
+                {
+                    var a=10;
+                    var b=20;
+                    var sum= a/b;
+                    document.write("division="+sum)
+                }
+                </script>
+        </body>
+    </html>

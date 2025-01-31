@@ -1,0 +1,37 @@
+<html>
+<head>
+    <script>
+        function fibonacci() {
+            var num1 = parseInt(document.getElementById("number1").value);
+            
+            if (isNaN(num1) || num1 <= 0) {
+                alert("Please enter a positive number.");
+                document.getElementById("number1").value = "";
+                return;
+            }
+            
+            var x = 0;
+            var y = 1;
+            var f = 0;
+            var i = 1; 
+            var output = x + " " + y; 
+            while (i < num1 - 1) { 
+                f = x + y;
+                output += " " + f; 
+                x = y;
+                y = f;
+                i++;
+            }
+            
+            document.getElementById("demo").innerHTML = output; 
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+        Enter the number of terms: <input type="text" id="number1" />
+        <input type="button" value="Generate Fibonacci" onclick="fibonacci()" />
+        <h1 id="demo"></h1>
+    </form>
+</body>
+</html>

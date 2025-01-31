@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="link1.css">
+   <style>
+   
+    table{
+        margin-top: 100px;
+        background-color: rgb(236, 217, 195);
+        color:black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 8px;
+    }
+    th, td {
+        padding: 10px; /* Add padding inside cells */
+       
+    }
+
+   
+    </style>
+    </head>
+    <body>
+        <form id="form" action="next.html">
+            <table align="center">
+                <tr >
+                    <th colspan="2">REGESTRATION FORM</th>
+                    </tr>
+                    <tr >
+                        <th colspan="2"><img style="align-items: center;" src="img.jpg"></th>
+                        </tr>
+                        <tr>
+                         <th>FIRST NAME:</th>
+                         <td><input type="text" id="textbox" class="styled-textbox"></tr>
+                        </tr>
+                        <tr>
+                            <th>LAST NAME:</th>
+                            <td><input type="text" id="textbox" class="styled-textbox"></tr>
+                           </tr>
+                           <tr>
+                            <th>PASSWORD:</th>
+                            <td><input type="password"  id="textbox" class="styled-textbox"></tr>
+                           </tr>
+                           <tr>
+                            <th>EMAIL:</th>
+                            <td><input type="email"  id="textbox" class="styled-textbox"></tr>
+                           </tr>
+                           <tr>
+                            <th>PHONE NUMBER:</th>
+                            <td><input type="number" id="textbox" class="styled-textbox"></tr>
+                           </tr>
+                           <tr>
+                            <tr>
+                                <th><label for="gender">Gender:</label></th>
+                                <td>
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                </td>
+                            </tr>
+                           
+                            <th>ADDRESS:</th>
+                            <td><textarea></textarea></tr>
+                           </tr>
+                          
+                           <tr>
+                            <th><label for="country">Country:</label></th>
+                            <td>
+                                <select id="country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="India">India</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Australia">Australia</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr >
+                            <th colspan="2"><input type="submit" name="t7" ></th>
+                            </tr>
+                </table>
+            </form>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fact(){
+            var n = parseInt(document.getElementById("t").value);
+            var f=1;
+            for(var i=1;i<=n;i++){
+            f=f*i;
+        }
+        alert(f);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="t" placeholder="enter the number">
+    <input type="button" onclick="fact()" value="click">
+   
+</body>
+</html>
